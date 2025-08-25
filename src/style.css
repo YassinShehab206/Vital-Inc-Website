@@ -2,12 +2,89 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 :root {
-    --d-blue: #03045E;  /* dark blue - primary */
-    --l-blue: #00B4D8; /* light blue - secondary */
+    --dblue: #03045E;  /* dark blue - primary */
+    --lblue: #00B4D8; /* light blue - secondary */
     --green: #30E2A7;
     --yellow: #FBAE17;
     --beige: #FFFCF4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--beige);
+    margin-top: 10em;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+    padding: 0px 24px;
+    background-color: var(--green);
+}
+
+#nav_logo {
+    height: 90%;
+    object-fit: contain;
+    padding: 12px;
+    margin-right: 8vw;
+}
+
+#nav_links {
+    display: flex;
+    height: 100%;
+    font-size: 2.4em;
+    list-style: none;
+    color: var(--dblue);
+    align-items: center;
+    gap: 2em;
+}
+
+#nav_links > li {
+    height: 100%;
+    display: flex;
+}
+
+#nav_links > li > a{
+    margin-inline: 20px;
+    height: 100%;
+    padding: 10px 18px;
+    list-style: none;
+    text-wrap: nowrap;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dblue);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+
+#nav_links > li > a:hover, #nav_links > li > a:focus {
+    color: var(--lblue);
+    background-color: var(--beige);
+    border-radius: 18px 18px 0px 0px;
+}
+
+body > div {
+    background-color: #f9f3e0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    margin: 2vh 0vh 2vh 0vh;
+}
+
+#title {
+    
 }
