@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dblue);
+    color: var(--beige);
+    text-align: center;
+    padding: 2em 0;
+}
+
+footer #socials .social a {
+    color: var(--beige);
+}
+
+footer #socials .social a:hover, footer #socials .social a:focus {
+    color: var(--lblue);
+}

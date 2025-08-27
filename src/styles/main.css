@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--lblue); 
+  color: var(--beige);
+}
+
+/* Color Palette */
+:root {
+    --dblue: #03045E;  /* dark blue - primary */
+    --lblue: #00B4D8; /* light blue - secondary */
+    --green: #30E2A7;
+    --yellow: #FBAE17;
+    --beige: #FFFCF4;
+}
+
+body {
+    background-color: var(--beige);
+    margin-top: 9vh;
+}
+
+body > div {
+    position: relative;
+    background-color: #fefae8;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    height: max-content;
+    margin: 2vh 0vh;
+    padding: 6vw 8vw;
+}
+
