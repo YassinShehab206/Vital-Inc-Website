@@ -1,0 +1,24 @@
+/* === OTHER SECTIONS === */
+#glucowise,
+#about_us,
+#contact_us {
+    min-height: 60vh;
+    justify-content: center;
+}
+
+/* Optional: Center the title in these sections */
+#glucowise .title,
+#about_us .title,
+#contact_us .title,
+#main .title {
+    text-align: center;
+}
+
+#glucowise .title::after,
+#about_us .title::after,
+#contact_us .title::after,
+#main .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    /* Center the underline */
+}

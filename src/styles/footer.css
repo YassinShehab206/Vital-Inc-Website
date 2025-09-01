@@ -1,18 +1,27 @@
+/* === FOOTER STYLES === */
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: var(--dblue);
     color: var(--beige);
     text-align: center;
-    padding: 2em 0;
+    padding: 4em 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
-footer #socials .social a {
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#socials a {
     color: var(--beige);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-footer #socials .social a:hover, footer #socials .social a:focus {
+#socials a:hover {
     color: var(--lblue);
+    transform: translateY(-3px);
 }

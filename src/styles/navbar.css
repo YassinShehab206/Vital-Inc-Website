@@ -1,73 +1,63 @@
+/* === NAVBAR STYLES === */
 nav {
     display: flex;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 4em;
-    padding: 0px 32px;
-    background-color: var(--dblue);
-    box-shadow: 0 4px 8px #03055e22;
+    z-index: 100;
+    /* High z-index to stay on top */
+    padding: 1em 8vw;
+    background-color: rgba(255, 252, 244, 0.8);
+    /* Semi-transparent beige */
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+    border-bottom: 1px solid rgba(3, 4, 94, 0.1);
 }
 
 #nav_logo {
-    height: 90%;
+    height: 40px;
+    /* A more standard height */
     object-fit: contain;
-    padding: 12px;
-    border-radius: 12px 12px 0px 0px;
-    margin-right: 8vw;
-    background-color: var(--beige);
-    align-self: flex-end;
 }
 
 #nav_links {
     display: flex;
-    height: 100%;
     list-style: none;
-    align-items: center;
-    gap: 2em;
+    gap: 2.5em;
+    /* A bit more spacing */
 }
 
-#nav_links > li {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-}
-
-#nav_links > li > a{
-    margin-inline: 20px;
-    height: 90%;
-    padding: 8px 12px;
-    list-style: none;
-    text-wrap: nowrap;
-    font-weight: bold;
+#nav_links a {
     text-decoration: none;
-    color: var(--beige);
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-}
-
-#nav_links > li > a:hover, #nav_links > li > a:active {
     color: var(--dblue);
-    background-color: var(--beige);
-    border-radius: 12px 12px 0px 0px;
-}
-
-.title {
-    color: var(--dblue);
-    font-size: 2.4rem;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5em 0;
     position: relative;
+    transition: color 0.3s ease;
 }
 
-.title::after {
+#nav_links a::after {
     content: '';
     position: absolute;
-    inset: 60px 0px 0px 0px;
-    height: 0.3em;
-    width: 40%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
     background-color: var(--lblue);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+#nav_links a:hover {
+    color: var(--lblue);
+}
+
+#nav_links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }

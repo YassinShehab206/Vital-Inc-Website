@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/page_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/webgl.css">
+    <link rel="stylesheet" href="styles/misc.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>Vital</title>
+</head>
+
+<body>
+    <canvas class="webgl-test"></canvas>
+    <nav>
+        <img id="nav_logo" src="../res/img/tmp.png" alt="Vital Logo">
+        <ul id="nav_links">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#glucowise">Glucowise</a></li>
+            <li><a href="#about_us">About us</a></li>
+            <li><a href="#contact_us">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <span class="title">What is Vital Inc?</span>
+        <span class="subtitle" style="text-align:center;">Hello. We are Vital Inc. Your humble, locally-produced CGM
+            startup.</span>
+    </div>
+
+    <div id="glucowise">
+        <span class="title">Glucowise</span>
+
+        <div id="3D Model">
+            <canvas class="webgl"></canvas>
+        </div>
+    </div>
+
+    <div id="about_us">
+        <span class="title">About Us</span>
+    </div>
+
+    <div id="contact_us">
+        <span class="title">Contact Us</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vital Inc. All rights reserved.</p>
+        <div id="socials">
+            <div class="social instagram">
+                <a href="https://www.instagram.com/thevitalinc" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <div class="social facebook">
+                <a href="https://www.facebook.com/profile.php?id=61572919503579" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+            </div>
+            <div class="social linkedin">
+                <a href="https://www.linkedin.com/company/thevitalinc" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
